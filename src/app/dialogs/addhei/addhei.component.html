@@ -1,0 +1,29 @@
+<h1 mat-dialog-title><b>Higher Education Institutions</b></h1>
+<mat-dialog-content>
+
+    <form>
+        <div class="form-group">
+            <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Institution Name:</label>
+            <input [(ngModel)]="name" type="text" name="name" placeholder="Enter the institution name" class="form-control">
+            <br>
+            <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Address:</label>
+            <input [(ngModel)]="address" type="text" name="address" placeholder="Enter your address" class="form-control">
+            <br>
+            <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Website:</label>
+            <input [(ngModel)]="website" type="text" name="website" placeholder="Enter the website" class="form-control">
+            <br>
+            <label for="office" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Contact Number:</label>
+            <input [(ngModel)]="number" type="text" name="number" placeholder="Enter your contact number" class="form-control">
+            <br>
+            <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Email:</label>
+            <input [(ngModel)]="email" type="text" name="email" placeholder="Enter your email address" class="form-control">
+        </div>
+      </form>
+      
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button type="button" mat-raised-button mat-dialog-close>Cancel</button>
+    <button type="button" (click)="high()" class="btn-success" mat-raised-button>Save</button>
+
+</mat-dialog-actions>

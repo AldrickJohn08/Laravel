@@ -1,0 +1,32 @@
+<h1 mat-dialog-title><b>Consultancy</b></h1>
+<mat-dialog-content>
+
+    <form>
+        <div class="form-group">
+            <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Name:</label>
+            <input [(ngModel)]="name" type="text" name="name" placeholder="Enter your name" class="form-control">
+            <br>
+            <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Area:</label>
+            <input [(ngModel)]="area" type="text" name="area" placeholder="Enter your area" class="form-control">
+            <br>
+            <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Specialty:</label>
+            <input [(ngModel)]="specialty" type="text" name="specialty" placeholder="Enter your specialty" class="form-control">
+            <br>
+            <label for="office" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Affiliation:</label>
+            <input [(ngModel)]="affiliation" type="text" name="affiliation" placeholder="Enter your affiliation" class="form-control">
+            <br>
+            <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Remarks:</label>
+            <input [(ngModel)]="remarks" type="text" name="remarks" placeholder="Enter your email address" class="form-control">
+            <br>
+            <label for="contact" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Province:</label>
+            <input [(ngModel)]="province" type="text" name="province" placeholder="Enter your province" class="form-control">
+        </div>
+      </form>
+      
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button type="button" mat-raised-button mat-dialog-close>Cancel</button>
+    <button type="button" (click)="consul()" class="btn-success" mat-raised-button>Save</button>
+
+</mat-dialog-actions>

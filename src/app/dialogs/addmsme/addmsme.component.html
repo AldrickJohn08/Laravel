@@ -1,0 +1,32 @@
+<h1 mat-dialog-title><b>Micro, Small, and Medium Enterprises</b></h1>
+<mat-dialog-content>
+
+    <form>
+        <div class="form-group">
+            <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Sector:</label>
+            <input [(ngModel)]="sector" type="text" name="sector" placeholder="Enter your sector" class="form-control">
+            <br>
+            <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Company Name:</label>
+            <input [(ngModel)]="company" type="text" name="company" placeholder="Enter the company name" class="form-control">
+            <br>
+            <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Address:</label>
+            <input [(ngModel)]="address" type="text" name="address" placeholder="Enter your address" class="form-control">
+            <br>
+            <label for="office" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Products:</label>
+            <input [(ngModel)]="products" type="text" name="products" placeholder="Enter the products" class="form-control">
+            <br>
+            <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">OIC:</label>
+            <input [(ngModel)]="oic" type="text" name="oic" placeholder="Enter your OIC" class="form-control">
+            <br>
+            <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Email:</label>
+            <input [(ngModel)]="email" type="text" name="email" placeholder="Enter your email address" class="form-control">
+        </div>
+      </form>
+      
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button type="button" mat-raised-button mat-dialog-close>Cancel</button>
+    <button type="button" (click)="micro()" class="btn-success" mat-raised-button>Save</button>
+
+</mat-dialog-actions>

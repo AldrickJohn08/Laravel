@@ -1,0 +1,21 @@
+.main {
+    width: 100%;
+    height: 100vh;
+    padding: 22px;
+    overflow: scroll;
+    transition: all .5s;
+    background-color: #f2f3f4;
+}
+.pos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #173074;
+    padding: 22px;
+    display: flex;  
+    justify-content: center;
+}
+
+.button-container{
+    display: flex;
+    justify-content: right;
+}

@@ -1,0 +1,29 @@
+<h1 mat-dialog-title><b>Technology Business Incubators</b></h1>
+<mat-dialog-content>
+    
+    <form>
+        <div class="form-group">
+            <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Name:</label>
+            <input [(ngModel)]="name" type="text" name="name" placeholder="Enter your name" class="form-control">
+            <br>
+            <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Sector:</label>
+            <input [(ngModel)]="sector" type="text" name="sector" placeholder="Enter your sector" class="form-control">
+            <br>
+            <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Address:</label>
+            <input [(ngModel)]="address" type="text" name="address" placeholder="Enter your address" class="form-control">
+            <br>
+            <label for="office" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Office in Charge:</label>
+            <input [(ngModel)]="office" type="text" name="office" placeholder="Enter the office you incharge" class="form-control">
+            <br>
+            <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Email/Contact Number:</label>
+            <input [(ngModel)]="email" type="text" name="email" placeholder="Enter your email and contact number" class="form-control">
+        </div>
+      </form>
+      
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button type="button" mat-raised-button mat-dialog-close>Cancel</button>
+    <button type="button" (click)="tbi()" class="btn-success" mat-raised-button>Save</button>
+
+</mat-dialog-actions>

@@ -1,0 +1,23 @@
+<h1 mat-dialog-title><b>Priority Sector</b></h1>
+<mat-dialog-content>
+
+    <form>
+        <div class="form-group">
+            <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Type:</label>
+            <input [(ngModel)]="type" type="text" name="type" placeholder="Enter the type" class="form-control">
+            <br>
+            <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Sector:</label>
+            <input [(ngModel)]="sector" type="text" name="sector" placeholder="Enter the sector" class="form-control">
+            <br>
+            <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Location:</label>
+            <input [(ngModel)]="location" type="text" name="location" placeholder="Enter your location" class="form-control">
+        </div>
+      </form>
+      
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button type="button" mat-raised-button mat-dialog-close>Cancel</button>
+    <button type="button" (click)="micro()" class="btn-success" mat-raised-button>Save</button>
+
+</mat-dialog-actions>

@@ -1,0 +1,45 @@
+<div class="main">
+  <h2 class="pos"><b>PROGRAMS</b></h2>
+
+  <div class="pub">
+    <input matInput placeholder="Search Keyword">
+    <div class="button-container">
+      <button type="button" style="background-color: #173074; color: #f2f3f4" (click)="openmodal()" class="btn btn-primary">Add User</button>
+    </div>
+   <br>
+    <table class="table table-bordered">
+      <thead>
+        <tr style="text-align: center;">
+          <th scope="col">Program</th>
+          <th scope="col">Agency</th>
+          <th scope="col">Address</th>
+          <th scope="col">Office-in-Charge</th>
+          <th scope="col">Email/Contact Number</th>
+          <th colspan="2" style="text-align: center;" >Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let prog of program">
+          <td>{{prog.program_name}}</td>
+          <td>{{prog.company_agency}}</td>
+          <td>{{prog.province}}</td>
+          <td>{{prog.sector}}</td>
+          <td>{{prog.email}} / {{prog.contact_number}}</td>
+          <td>
+            <a class="btn" style="background-color: #93969c; color: #f2f3f4">Edit</a>
+          </td>
+          <td><a style="background-color: #b40303; color: #f2f3f4" class="btn">Delete</a></td>
+        </tr>
+      </tbody>
+    </table>
+    <div>
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link">Previous</a></li>
+          <li class="page-item"><a class="page-link">1</a></li>
+          <li class="page-item"><a class="page-link">Next</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>

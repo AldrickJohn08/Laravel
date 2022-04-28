@@ -1,0 +1,32 @@
+<h1 mat-dialog-title><b>Programs</b></h1>
+<mat-dialog-content>
+
+<form>
+        <div class="form-group">
+          
+            <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Program:</label>
+            <input [(ngModel)]="user.program" type="text" name="program" placeholder="Enter your program" class="form-control">
+            <br>
+            <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Agency:</label>
+            <input [(ngModel)]="user.agency" type="text" name="agency" placeholder="Enter your agency" class="form-control">
+            <br>
+            <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Address:</label>
+            <input [(ngModel)]="user.address" type="text" name="address" placeholder="Enter your address" class="form-control">
+            <br>
+            <label for="office" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Office in Charge:</label>
+            <input [(ngModel)]="user.office" type="text" name="office" placeholder="Enter office you in charge" class="form-control">
+            <br>
+            <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Email:</label>
+            <input [(ngModel)]="user.email" type="text" name="email" placeholder="Enter your email address" class="form-control">
+            <br>
+            <label for="contact" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Contact Number:</label>
+            <input [(ngModel)]="user.contact" type="text" name="contact" placeholder="Enter your contact number" class="form-control">
+        </div>
+</form>
+      
+</mat-dialog-content>
+
+<mat-dialog-actions>
+    <button type="button" mat-raised-button mat-dialog-close>Cancel</button>
+    <button type="button" (click)="insertData()" class="btn-success" mat-raised-button>Save</button>
+</mat-dialog-actions>

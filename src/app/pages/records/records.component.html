@@ -1,0 +1,42 @@
+<div class="main">
+  <h2 class="pos"><b>Categories</b></h2>
+
+  <select style="background-color: #173074; color: #f2f3f4" class="form-select" aria-label="Default select example">
+    <option selected >Categories</option>
+    <option value="1">Program</option>
+    <option value="2">Technology Business Incubators</option>
+    <option value="3">Research & Developmend Facilities</option>
+    <option value="3">Negosyo Centers</option>
+    <option value="3">Shared Services Facilities</option>
+    <option value="3">Negosyo Centers</option>
+    <option value="3">Shared Services Facilities</option>
+    <option value="3">Researches</option>
+    <option value="3">Economic Zones</option>
+  </select>
+
+  <form>
+    <br>
+    <div class="form-group">
+      
+        <label for="program" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Program</label>
+        <input [(ngModel)]="user.program" type="text" name="1" placeholder="Enter title" class="form-control">
+
+        <label for="agency" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Agency</label>
+        <input [(ngModel)]="user.agency" type="text" name="2" placeholder="Enter title" class="form-control">
+
+        <label for="address" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Address</label>
+        <input [(ngModel)]="user.address" type="text" name="3" placeholder="Enter title" class="form-control">
+
+        <label for="office" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Office in Charge</label>
+        <input [(ngModel)]="user.office" type="text" name="4" placeholder="Enter title" class="form-control">
+
+        <label for="email" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Email</label>
+        <input [(ngModel)]="user.email" type="text" name="5" placeholder="Enter title" class="form-control">
+
+        <label for="contact" style="font-weight: normal; font-size: 10; margin-bottom: 0px">Contact Number</label>
+        <input [(ngModel)]="user.contact" type="text" name="5" placeholder="Enter title" class="form-control">
+    </div>
+  <br>
+    <a class="btn" style="background-color: #173074; color: #f2f3f4">Add User</a>
+  </form>  
+</div>

@@ -1,0 +1,46 @@
+<div class="main">
+  <h2 class="pos"><b>NEGOSYO CENTERS</b></h2>
+      <input matInput placeholder="Search Keyword">
+    <div class="button-container">
+        <button type="button" style="background-color: #173074; color: #f2f3f4" (click)="openmodal()" class="btn btn-primary">Add User</button>
+    </div>
+    <br>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th scope="col">Address</th>
+        <th scope="col">Service Area</th>
+        <th scope="col">Contact Person</th>
+        <th scope="col">Position</th>
+        <th scope="col">Telephone Number</th>
+        <th scope="col">Email</th>
+        <th colspan="2" style="text-align: center;" >Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let neg of negosyo">
+        <td>{{neg.complete_address}}</td>
+        <td>{{neg.service_area}}</td>
+        <td>{{neg.contact_person}}</td>
+        <td>{{neg.position}}</td>
+        <td>{{neg.telephone_number}}</td>
+        <td>{{neg.email_address}} </td>
+        
+        
+        <td>
+          <a class="btn" style="background-color: #93969c; color: #f2f3f4">Edit</a>
+        </td>
+        <td><a style="background-color: #b40303; color: #f2f3f4" class="btn">Delete</a></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="main2">
+    <nav aria-label="Page navigation example">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link">Previous</a></li>
+        <li class="page-item"><a class="page-link">1</a></li>
+        <li class="page-item"><a class="page-link">Next</a></li>
+      </ul>
+    </nav>
+   </div>
+</div>
